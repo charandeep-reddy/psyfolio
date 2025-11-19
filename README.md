@@ -41,6 +41,10 @@ components/
 lib/              # Utilities
 ```
 
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
 ## Credits
 
 Inspired by [vCard Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio) by [codewithsadee](https://github.com/codewithsadee)
