@@ -49,7 +49,7 @@ const socialConfig = [
 
 export const Sidebar = ({ className }: SidebarProps) => {
   return (
-    <Card className={cn("flex flex-col gap-8 px-7.5 pb-7.5 pt-15 rounded-2xl text-white h-fit", className)}>
+    <Card className={cn("flex flex-col gap-8 px-7.5 pb-7.5 pt-15 rounded-[20px] text-white h-fit", className)}>
       <div className="flex flex-col gap-5 items-center justify-between">
         <div className="w-[150px] aspect-square rounded-3xl bg-white shadow-md"></div>
 

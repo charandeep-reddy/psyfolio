@@ -39,7 +39,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between max-w-xl w-full px-5 absolute top-0 right-0 rounded-bl-3xl rounded-tr-3xl border border-gray-600 z-10">
+    <nav className="flex items-center justify-between max-w-xl w-full px-5 absolute -top-px -right-px rounded-bl-[20px] rounded-tr-[20px] border border-gray-800 z-10">
       <div className="w-full px-5 flex items-center justify-between">
         {navbarConfig.map((item) => {
           const isActive = getActiveSection(item.href);

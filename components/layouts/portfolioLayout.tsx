@@ -12,7 +12,7 @@ export function PortfolioLayout({ children, title }: PortfolioLayoutProps) {
     <div className="my-15 max-w-7xl mx-auto grid grid-cols-4 gap-7 w-full min-h-screen relative">
       <Sidebar className="col-span-1 sticky top-15" />
 
-      <Card className="col-span-3 min-h-screen p-7.5 relative w-full flex flex-col gap-10">
+      <Card className="col-span-3 min-h-screen p-7.5 relative w-full flex flex-col gap-10 rounded-[20px]">
         <Navbar />
         {title && (
             <div className="relative pb-7">
