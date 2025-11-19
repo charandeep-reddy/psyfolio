@@ -11,15 +11,6 @@
 
 ---
 
-## 🎨 Credits & Inspiration
-
-This portfolio is inspired by the **vCard Personal Portfolio** template created by [codewithsadee](https://github.com/codewithsadee).
-
--  **Original Template**: [vCard Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio) (HTML, CSS, JavaScript)
-
-> This Next.js version has been rebuilt using modern web technologies while maintaining the design inspiration from the original template.
-
----
 
 ## 🚀 Tech Stack
 
@@ -40,7 +31,7 @@ This portfolio is inspired by the **vCard Personal Portfolio** template created 
 
 **1. Clone the repository**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/charandeep-reddy/psydevx-portfolio.git
 cd portfolio
 ```
 
@@ -53,9 +44,6 @@ pnpm install
 ```bash
 pnpm dev
 ```
-
-**4. Open your browser**
-👉 Navigate to [http://localhost:3000](http://localhost:3000)
 
 ---
 
@@ -132,5 +120,15 @@ portfolio/
 ## 🎉 That's It!
 
 You're all set! Start editing the config files and watch your portfolio come to life! 🚀
+
+---
+
+## 🎨 Credits & Inspiration
+
+This portfolio is inspired by the **vCard Personal Portfolio** template created by [codewithsadee](https://github.com/codewithsadee).
+
+-  **Original Template**: [vCard Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio) (HTML, CSS, JavaScript)
+
+> This Next.js version has been rebuilt using modern web technologies while maintaining the design inspiration from the original template.
 
 ---
