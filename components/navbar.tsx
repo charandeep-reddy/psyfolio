@@ -1,0 +1,61 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Title } from "./ui/title";
+import { cn } from "@/lib/utils";
+
+export const navbarConfig = [
+  {
+    title: "About",
+    href: "/",
+  },
+  {
+    title: "Resume",
+    href: "/resume",
+  },
+  {
+    title: "Portfolio",
+    href: "/portfolio",
+  },
+  {
+    title: "Blog",
+    href: "/blog",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
+];
+
+export const Navbar = () => {
+  const pathname = usePathname();
+
+  // Normalize pathname for comparison (handle root "/" and exact matches)
+  const getActiveSection = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname?.startsWith(href);
+  };
+
+  return (
+    <nav className="flex items-center justify-between max-w-xl w-full px-5 absolute top-0 right-0 rounded-bl-3xl rounded-tr-3xl border border-gray-600 z-10">
+      <div className="w-full px-5 flex items-center justify-between">
+        {navbarConfig.map((item) => {
+          const isActive = getActiveSection(item.href);
+          return (
+            <Link key={item.title} href={item.href} prefetch={true}>
+              <Title
+                text={item.title}
+                className={cn(
+                  "text-base px-2 py-5 cursor-pointer transition-colors",
+                  isActive ? "text-blue-400" : "text-white hover:text-blue-400/80"
+                )}
+              />
+            </Link>
+          );
+        })}
+      </div>
+    </nav>
+  );
+};

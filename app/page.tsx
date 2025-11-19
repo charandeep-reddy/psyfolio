@@ -1,7 +1,11 @@
-export default function Home () {
+import { PortfolioLayout } from "@/components/layouts/portfolioLayout";
+import { aboutConfig } from "@/components/configs/aboutConfig";
+import { AboutTemplate } from "@/components/templates/aboutTemplate";
+
+export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold">Charan's Portfolio</h1>
-    </div>
-  )
+    <PortfolioLayout title={aboutConfig.title}>
+      <AboutTemplate config={aboutConfig} />
+    </PortfolioLayout>
+  );
 }
